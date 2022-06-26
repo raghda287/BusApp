@@ -8,7 +8,7 @@ import 'package:hexcolor/hexcolor.dart';
 
 import '../profile/your_profile.dart';
 import '../splash_screen/splash_screen.dart';
-import 'login_page.dart';
+import 'widgets/login/login_page.dart';
 
 
 class ProfilePage extends StatefulWidget{
@@ -288,7 +288,7 @@ boxShadow: const [
                 title: Text('Payment', style: TextStyle( color: Theme.of(context).primaryColor),
                 ),
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()),);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>  LoginPage()),);
                 },
               ),
               Divider(color: Theme.of(context).primaryColor, height: 1,),

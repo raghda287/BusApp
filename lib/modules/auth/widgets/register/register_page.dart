@@ -1,4 +1,4 @@
-import 'package:easy_bus_app/modules/auth/profile.dart';
+import 'package:easy_bus_app/modules/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -8,18 +8,13 @@ import '../common/theme_helper.dart';
 
 
 
-class RegistrationPage extends  StatefulWidget{
-  const RegistrationPage({Key? key}) : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() {
-    return _RegistrationPageState();
-  }
-}
-
-class _RegistrationPageState extends State<RegistrationPage>{
+class RegistrationPage extends  StatelessWidget{
 
   final _formKey = GlobalKey<FormState>();
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+  var nameController = TextEditingController();
+  var phoneController = TextEditingController();
   bool checkedValue = false;
   bool checkboxValue = false;
 
